@@ -217,7 +217,7 @@ function MenuDetailModal({ isOpen, onClose, menuId }) {
     >
       <div 
       onClick={preventCloseClick}
-      className="bg-color-5 xl:max-h-5/6 max-h-screen overflow-y-auto scrollbar:none [&::-webkit-scrollbar]:hidden max-w-2xl p-6 flex flex-col gap-y-4 rounded-2xl"
+      className="bg-color-5 xl:max-h-5/6 max-h-200 overflow-y-auto scrollbar:none [&::-webkit-scrollbar]:hidden max-w-2xl p-6 flex flex-col gap-y-4 rounded-2xl"
       >
         <div className="flex">
           <div className="flex justify-center items-center w-full">
@@ -347,8 +347,8 @@ function MenuDetailModal({ isOpen, onClose, menuId }) {
               </div>
             </div>
 
-            <div className="flex bg-white bottom-0 sticky p-4 shadow-2xl z-90 rounded-2xl justify-between shrink-0">
-              <div className="flex flex-col text-color-4">
+            <div className="text-xs md:text-base flex bg-white bottom-0 sticky p-4 shadow-2xl z-90 rounded-2xl justify-between shrink-0">
+              <div className="flex flex-col justify-center text-color-4">
                 <p className="font-bold">
                   Grand Total
                 </p>
@@ -363,7 +363,7 @@ function MenuDetailModal({ isOpen, onClose, menuId }) {
                     type="button"
                     onClick={handleRemoveOrder}
                     disabled={orders.length === 1}
-                    className="p-4 rounded-full border-color-4 disabled:opacity-30 flex justify-center items-center hover:bg-color-6 transition duration-300 disabled:hover:bg-white"
+                    className="p-2 rounded-full border-color-4 disabled:opacity-30 flex justify-center items-center hover:bg-color-6 transition duration-300 disabled:hover:bg-white"
                   >
                     <Minus className="w-5 h-5" />
                   </button>
@@ -373,7 +373,7 @@ function MenuDetailModal({ isOpen, onClose, menuId }) {
                   <button
                     type="button"
                     onClick={handleAddOrder}
-                    className="p-4 rounded-full border-color-4 flex justify-center items-center hover:bg-color-6 transition duration-300"
+                    className="p-2 rounded-full border-color-4 flex justify-center items-center hover:bg-color-6 transition duration-300"
                   >
                     <Plus className="w-5 h-5"/>
                   </button>
@@ -382,7 +382,7 @@ function MenuDetailModal({ isOpen, onClose, menuId }) {
                 onClick={handleAddToCart}
                 disabled={successAdded}
                 className={`
-                     text-white rounded-full px-6 py-2 transition duration-300 text-sm
+                     text-white rounded-full px-4 md:px-6 transition duration-300
                     ${successAdded 
                       ? "bg-green-600 hover:bg-none" 
                       : "bg-color-1 hover:bg-color-1/80"

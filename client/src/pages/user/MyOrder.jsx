@@ -25,6 +25,7 @@ function MyOrder() {
   // FETCH MENU DETAILS
   useEffect(() => {
     const fetchMenuDetails = async () => {
+
       try {
         const details = await Promise.all(
           cartItems.map(async (item) => {
@@ -40,7 +41,7 @@ function MyOrder() {
         setMenuDetails(details);
       } catch (error) {
         console.error("Failed to fetch menu details:", error);
-      }
+      } 
     };
 
     if (cartItems.length > 0) {
