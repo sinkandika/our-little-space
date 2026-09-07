@@ -2,7 +2,7 @@ import axios from "axios";
 
 // modify HTTP requests and responses globally before they are handled
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: import.meta.env.VITE_API_URL || import.meta.env.VITE_API_LOCAL_URL,
 });
 
 axiosInstance.interceptors.request.use(
