@@ -29,7 +29,7 @@ function TrackOrderDetailModal({ isOpen, orderData, onClose }) {
     >
       <div 
       onClick={preventCloseClick}
-      className="w-full max-w-xl xl:max-h-5/6 max-h-screen rounded-2xl overflow-y-auto scrollbar:none [&::-webkit-scrollbar]:hidden bg-white p-6 text-color-4"
+      className="w-full max-w-xl xl:max-h-5/6 max-h-5/6 rounded-2xl overflow-y-auto scrollbar:none [&::-webkit-scrollbar]:hidden bg-white p-6 text-color-4"
       >
 
         <div className="relative">
