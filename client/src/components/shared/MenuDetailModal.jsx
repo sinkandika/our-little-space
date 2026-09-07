@@ -217,7 +217,7 @@ function MenuDetailModal({ isOpen, onClose, menuId }) {
     >
       <div 
       onClick={preventCloseClick}
-      className="bg-color-5 xl:max-h-5/6 max-h-200 overflow-y-auto scrollbar:none [&::-webkit-scrollbar]:hidden max-w-2xl p-6 flex flex-col gap-y-4 rounded-2xl"
+      className="bg-color-5 xl:max-h-5/6 max-h-5/6 overflow-y-auto scrollbar:none [&::-webkit-scrollbar]:hidden max-w-2xl p-6 flex flex-col gap-y-4 rounded-2xl"
       >
         <div className="flex">
           <div className="flex justify-center items-center w-full">
