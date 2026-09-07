@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+
+:root {
+  font-family: 'Inter Variable', sans-serif;
+}
+
+
+@theme {
+  --color-color-1: #CE8936;
+  --color-color-2: #563F30;
+  --color-color-3: #EDD2B4;
+  --color-color-4: #2B2522;
+  --color-color-5: #F4F4F4;
+  --color-color-6: #E9E4DA;
+  --color-color-7: #f7ece2;
+  --color-color-8: #70685e;
+  --color-color-9: #725033;
+  --color-color-10: #5f6066;
+
+  --color-delete-1: #EA3B24;
+}
